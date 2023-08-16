@@ -18,6 +18,14 @@ jobs:
       - name: path after 
         run: pwd
       - name: get inside repo
+<<<<<<< HEAD
         run: npm install
         run: npm start
+=======
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - run: npm install
+      - run: npm start
+>>>>>>> refs/remotes/origin/main
 
