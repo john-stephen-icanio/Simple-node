@@ -11,11 +11,13 @@ jobs:
   build-node:
     runs-on: ubuntu-latest
     steps:
-      - run: pwd
+      - name: path before
+        run: pwd
       - name: Checkout Repository
         uses: actions/checkout@v2
-      - run: pwd
+      - name: path after 
+        run: pwd
       - name: get inside repo
-#      - run: npm install
-#     - run: npm start
+        run: npm install
+        run: npm start
 
