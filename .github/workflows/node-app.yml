@@ -24,7 +24,7 @@ jobs:
         
 
       - name: Deploy to GitHub Pages
-        uses: john-stephen-icanio/Simple-node@2
+        uses: john-stephen-icanio/Simple-node@1
         with:
           branch: gh-pages
           folder: dist
