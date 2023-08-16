@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v2
       - run: pwd
       - name: get inside repo
-        uses: actions/Simple-node@2
+        uses: actions/Simple-node
       - run: npm install
       - run: npm start
-# 
+ 
