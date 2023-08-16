@@ -12,15 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: path before
-        run: pwd
+        run: pwd | ls
       - name: Checkout Repository
         uses: actions/checkout@v2
       - name: path after
-        run: pwd
+        run: pwd | ls
       - name: om
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '12'
       - run: npm install
       - run: npm start
 
