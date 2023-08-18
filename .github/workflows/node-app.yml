@@ -11,6 +11,8 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
-#      - run: pm2 --version
+        uses: actions/checkout@v3
       - run: docker --version
+      - run: docker ps
+      - run: docker images
+      - run: docker ps -a
