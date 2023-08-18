@@ -23,10 +23,4 @@ jobs:
           npm install
         
 
-      - name: Deploy to GitHub Pages
-        uses: john-stephen-icanio/Simple-node@1
-        with:
-          branch: gh-pages
-          folder: dist
-      - name: please
         run: npm start
