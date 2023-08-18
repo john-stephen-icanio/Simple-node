@@ -12,15 +12,5 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '12'
-
-      - name: Install Dependencies and Build
-        run: |
-          npm install
-        
-
+      - run: npm install
       - run: node index.js
