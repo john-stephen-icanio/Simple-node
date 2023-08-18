@@ -23,3 +23,4 @@ jobs:
       - run: docker images
       - run: docker run -d --name node-js -p "3000:3000" node-js
       - run: docker ps
+      - run: curl localhost:3000
