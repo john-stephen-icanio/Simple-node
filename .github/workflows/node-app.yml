@@ -12,7 +12,14 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+      - run: pwd
+      - run: ls
+      - run: curl ipconfig.io
       - run: docker --version
       - run: docker ps
       - run: docker images
       - run: docker ps -a
+      - run: docker build -it node-js .
+      - run: docker images
+      - run: docker run -d --name node-js -p "3000:3000" node-js
+      - run: docker ps
