@@ -29,4 +29,4 @@ jobs:
           branch: gh-pages
           folder: dist
       - name: please
-        run: npm install
+        run: npm start
