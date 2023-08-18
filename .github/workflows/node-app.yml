@@ -19,11 +19,8 @@ jobs:
       - run: docker ps
       - run: docker images
       - run: docker ps -a
-      - run: docker stop node-js
-      - run: docker rm -f node-js
-      - run: docker rmi node-js
       - run: docker build -t node-js .
       - run: docker images
       - run: docker run -d --name node-js -p "3000:3000" node-js
       - run: docker ps
-      - run: curl localhost:3000
+      - run: curl $(curl ipconfig.io):3000
